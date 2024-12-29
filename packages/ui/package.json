@@ -8,6 +8,10 @@
       "types": "./src/components/button.tsx",
       "default": "./dist/components/button.js"
     },
+    "./components/typography": {
+      "types": "./src/components/typography.tsx",
+      "default": "./dist/components/typography.js"
+    },
     "./styles.css": "./dist/index.css"
   },
   "scripts": {
