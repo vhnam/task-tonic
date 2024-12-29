@@ -4,25 +4,30 @@
   "type": "module",
   "private": true,
   "exports": {
-    "./button": "./src/button.tsx",
-    "./card": "./src/card.tsx",
-    "./code": "./src/code.tsx"
+    "./components/button": {
+      "types": "./src/components/button.tsx",
+      "default": "./dist/components/button.js"
+    },
+    "./styles.css": "./dist/index.css"
   },
   "scripts": {
     "lint": "eslint . --max-warnings 0",
-    "generate:component": "turbo gen react-component",
-    "check-types": "tsc --noEmit"
+    "check-types": "tsc --noEmit",
+    "build:tailwind": "tailwindcss -i ./src/styles/globals.css -o ./dist/index.css",
+    "build": "yarn build:tailwind && tsc"
   },
   "devDependencies": {
     "@repo/eslint-config": "*",
+    "@repo/tailwind-config": "*",
     "@repo/typescript-config": "*",
-    "@turbo/gen": "^1.12.4",
+    "@repo/utils": "*",
     "@types/node": "^20.11.24",
     "@types/react": "18.3.0",
     "@types/react-dom": "18.3.1",
     "typescript": "5.5.4"
   },
   "dependencies": {
+    "@mui/base": "^5.0.0-beta.68",
     "react": "^19.0.0",
     "react-dom": "^19.0.0"
   }
