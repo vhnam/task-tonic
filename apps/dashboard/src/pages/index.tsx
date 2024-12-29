@@ -1,10 +1,10 @@
-import Button from "@repo/ui/components/button";
-import { Manrope } from "next/font/google";
-import Image from "next/image";
+import Button from '@repo/ui/components/button';
+import { Manrope } from 'next/font/google';
+import Image from 'next/image';
 
 const manropeSans = Manrope({
-  subsets: ["latin"],
-  variable: "--font-manrope-sans",
+  subsets: ['latin'],
+  variable: '--font-manrope-sans',
 });
 
 export default function Home() {
@@ -23,7 +23,7 @@ export default function Home() {
         />
         <ol className="list-inside list-decimal text-center text-sm sm:text-left">
           <li className="mb-2">
-            Get started by editing{" "}
+            Get started by editing{' '}
             <code className="rounded bg-black/[.05] px-1 py-0.5 font-semibold dark:bg-white/[.06]">
               src/pages/index.tsx
             </code>
