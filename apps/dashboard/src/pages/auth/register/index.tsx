@@ -1,10 +1,12 @@
-import Divider from '@repo/ui/components/divider';
-import Logo from '@repo/ui/components/logo';
-import SocialButton from '@repo/ui/components/socialButton';
-import TextField from '@repo/ui/components/textField';
-import Typography from '@repo/ui/components/typography';
 import Link from 'next/link';
-import Button from '../../../../../../packages/ui/dist/components/button/button';
+import {
+  Button,
+  Divider,
+  Logo,
+  SocialButton,
+  TextField,
+  Typography,
+} from '@repo/ui/components';
 
 const RegisterPage = () => {
   return (

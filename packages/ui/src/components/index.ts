@@ -3,6 +3,8 @@ export * from './Checkbox';
 export * from './Divider';
 export * from './Drawer';
 export * from './Logo';
+export * from './Menu';
+export * from './MenuItem';
 export * from './SocialButton';
 export * from './TextField';
 export * from './Typography';

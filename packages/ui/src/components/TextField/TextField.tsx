@@ -1,19 +1,21 @@
-import { type InputProps, Input as MuiInput } from '@mui/base/Input';
-import { Typography } from '../Typography';
+import { Input as MuiInput, type InputProps } from '@mui/base/Input';
+import { Typography } from '@/components/Typography';
 
 export type TextFieldProps = InputProps & {
-  label: string;
+  label?: string;
 };
 
-const TextField = ({ className, label, ...props }: TextFieldProps) => {
+const TextField = ({ label, ...props }: TextFieldProps) => {
   return (
     <div className="w-full">
-      <Typography
-        variant="sm"
-        className="text-greyscale-900 mb-[0.375rem] font-medium"
-      >
-        {label}
-      </Typography>
+      {label && (
+        <Typography
+          variant="sm"
+          className="text-greyscale-900 mb-1.5 font-medium"
+        >
+          {label}
+        </Typography>
+      )}
       <MuiInput
         slotProps={{
           input: {

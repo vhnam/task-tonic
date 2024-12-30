@@ -1,4 +1,12 @@
 export { default as Apple } from './Apple';
+export { default as Building } from './Building';
 export { default as Google } from './Google';
+export { default as Layers } from './Layers';
+export { default as LayoutAlt } from './LayoutAlt';
 export { default as LogoLarge, type LogoLargeProps } from './LogoLarge';
 export { default as LogoSmall, type LogoSmallProps } from './LogoSmall';
+export { default as Message } from './Message';
+export { default as PieChart } from './PieChart';
+export { default as Star } from './Star';
+export { default as User } from './User';
+export { default as UserPlus } from './UserPlus';

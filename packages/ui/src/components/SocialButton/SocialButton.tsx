@@ -1,5 +1,5 @@
-import { Apple, Google } from '../../icons';
-import { Button, type ButtonProps } from '../Button';
+import { Button, type ButtonProps } from '@/components/Button';
+import { Apple, Google } from '@/icons';
 
 export type SocialButtonProps = Omit<ButtonProps, 'variant'> & {
   variant: 'apple' | 'google';

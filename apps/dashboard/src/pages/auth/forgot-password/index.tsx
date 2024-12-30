@@ -1,9 +1,6 @@
-import Logo from '@repo/ui/components/logo';
-import TextField from '@repo/ui/components/textField';
-import Typography from '@repo/ui/components/typography';
-import Button from '../../../../../../packages/ui/dist/components/button/button';
+import { Button, Logo, TextField, Typography } from '@repo/ui/components';
 
-const NewPasswordPage = () => {
+const ForgotPasswordPage = () => {
   return (
     <div className="flex h-screen bg-[url(/assets/images/bg-auth.jpg)] bg-cover">
       <div className="flex flex-col justify-between p-[3.125rem]">
@@ -43,4 +40,4 @@ const NewPasswordPage = () => {
   );
 };
 
-export default NewPasswordPage;
+export default ForgotPasswordPage;

@@ -1,5 +1,6 @@
 import js from '@eslint/js';
 import eslintConfigPrettier from 'eslint-config-prettier';
+import createTypeScriptImportResolver from 'eslint-import-resolver-typescript';
 import importPlugin from 'eslint-plugin-import';
 import onlyWarn from 'eslint-plugin-only-warn';
 import sortPlugin from 'eslint-plugin-sort';
@@ -40,8 +41,15 @@ export const config = [
       'import/parsers': {
         '@typescript-eslint/parser': ['.ts', '.tsx'],
       },
-      'import/resolver': {
-        typescript: {},
+      'import/resolver-next': [
+        createTypeScriptImportResolver({
+          alwaysTryTypes: true,
+          project: ['apps/*/tsconfig.json', 'packages/*/tsconfig.json'],
+        }),
+      ],
+      tailwind: {
+        callees: ['cn'],
+        config: path.join(import.meta.dirname, 'tailwind.config.ts'),
       },
     },
   },
