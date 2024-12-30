@@ -1,4 +1,4 @@
-import { SVGProps } from 'react';
+import type { SVGProps } from 'react';
 
 const UserPlus = (props: SVGProps<SVGSVGElement>) => (
   <svg
@@ -8,6 +8,7 @@ const UserPlus = (props: SVGProps<SVGSVGElement>) => (
     fill="none"
     {...props}
   >
+    <title>User Plus</title>
     <path
       stroke="currentColor"
       strokeLinecap="round"

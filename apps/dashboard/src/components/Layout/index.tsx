@@ -1,5 +1,5 @@
 import { Manrope } from 'next/font/google';
-import { PropsWithChildren } from 'react';
+import type { PropsWithChildren } from 'react';
 
 const manropeSans = Manrope({
   subsets: ['latin'],

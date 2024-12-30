@@ -3,7 +3,7 @@ import {
   type MenuItemProps as MuiMenuItemProps,
 } from '@mui/base/MenuItem';
 import cn from '@repo/utils/cn';
-import { ReactNode } from 'react';
+import type { ReactNode } from 'react';
 
 export type MenuItemProps = MuiMenuItemProps & {
   leftSection?: ReactNode;

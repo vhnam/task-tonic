@@ -1,4 +1,4 @@
-import { SVGProps } from 'react';
+import type { SVGProps } from 'react';
 
 const Building = (props: SVGProps<SVGSVGElement>) => (
   <svg
@@ -8,6 +8,7 @@ const Building = (props: SVGProps<SVGSVGElement>) => (
     fill="none"
     {...props}
   >
+    <title>Building</title>
     <path
       stroke="currentColor"
       strokeLinecap="round"
