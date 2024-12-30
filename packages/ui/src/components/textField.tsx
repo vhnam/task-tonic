@@ -7,7 +7,7 @@ export type TextFieldProps = InputProps & {
 
 const TextField = ({ className, label, ...props }: TextFieldProps) => {
   return (
-    <div>
+    <div className="w-full">
       <Typography
         variant="sm"
         className="text-greyscale-900 mb-[0.375rem] font-medium"
