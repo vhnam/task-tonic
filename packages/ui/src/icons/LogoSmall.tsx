@@ -1,4 +1,4 @@
-import { SVGProps } from 'react';
+import type { SVGProps } from 'react';
 
 export interface LogoSmallProps extends SVGProps<SVGSVGElement> {
   variant: 'color' | 'white';
@@ -15,6 +15,7 @@ const LogoSmall = ({ variant, ...props }: LogoSmallProps) => {
       fill="none"
       {...props}
     >
+      <title>Small Logo</title>
       <path
         stroke={fillColor}
         strokeLinecap="round"

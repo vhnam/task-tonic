@@ -1,6 +1,6 @@
 import { Button as MuiButton } from '@mui/base/Button';
 import cn from '@repo/utils/cn';
-import { PropsWithChildren } from 'react';
+import type { PropsWithChildren } from 'react';
 import { sizeStyles, variantStyles } from './Button.styles';
 
 export interface ButtonProps extends PropsWithChildren {
@@ -19,7 +19,7 @@ const Button = ({
     <MuiButton
       className={cn(
         `${variantStyles[variant]} ${sizeStyles[size]} rounded-[6.25rem] font-medium transition`,
-        className
+        className,
       )}
     >
       {children}

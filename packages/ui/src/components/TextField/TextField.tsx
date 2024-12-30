@@ -1,4 +1,4 @@
-import { InputProps, Input as MuiInput } from '@mui/base/Input';
+import { type InputProps, Input as MuiInput } from '@mui/base/Input';
 import { Typography } from '../Typography';
 
 export type TextFieldProps = InputProps & {

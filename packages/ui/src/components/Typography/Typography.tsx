@@ -1,5 +1,5 @@
 import cn from '@repo/utils/cn';
-import { PropsWithChildren } from 'react';
+import type { PropsWithChildren } from 'react';
 import { variantStyles } from './Typography.styles';
 
 export type TypographyVariant =

@@ -1,4 +1,4 @@
-import { SVGProps } from 'react';
+import type { SVGProps } from 'react';
 
 const Google = (props: SVGProps<SVGSVGElement>) => (
   <svg
@@ -8,6 +8,7 @@ const Google = (props: SVGProps<SVGSVGElement>) => (
     fill="none"
     {...props}
   >
+    <title>Google</title>
     <g clipPath="url(#a)">
       <path
         fill="#4285F4"

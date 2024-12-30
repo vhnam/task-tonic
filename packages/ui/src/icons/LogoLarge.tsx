@@ -1,4 +1,4 @@
-import { SVGProps } from 'react';
+import type { SVGProps } from 'react';
 
 export interface LogoLargeProps extends SVGProps<SVGSVGElement> {
   variant: 'color' | 'white';
@@ -15,6 +15,7 @@ const LogoLarge = ({ variant, ...props }: LogoLargeProps) => {
       fill="none"
       {...props}
     >
+      <title>Large Logo</title>
       <path
         stroke={fillColor}
         strokeLinecap="round"

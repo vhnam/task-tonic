@@ -1,6 +1,6 @@
-import { AllHTMLAttributes } from 'react';
 import cn from '@repo/utils/cn';
-import Typography from '../Typography/Typography.js';
+import type { AllHTMLAttributes } from 'react';
+import { Typography } from '../Typography';
 
 export interface CheckboxProps extends AllHTMLAttributes<HTMLInputElement> {
   label?: string;

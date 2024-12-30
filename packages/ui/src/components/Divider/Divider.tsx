@@ -1,4 +1,4 @@
-import { PropsWithChildren } from 'react';
+import type { PropsWithChildren } from 'react';
 import { positionStyles } from './Divider.styles';
 
 export interface DividerProps extends PropsWithChildren {
