@@ -1,5 +1,4 @@
-import LogoLarge from '../../icons/logoLarge';
-import LogoSmall from '../../icons/logoSmall';
+import { LogoLarge, LogoSmall } from '../../icons';
 
 export interface LogoProps {
   size: 'large' | 'small';

@@ -1,4 +1,4 @@
-export { default as LogoLarge, type LogoLargeProps } from './DogoLarge';
-export { default as LogoSmall, type LogoSmallProps } from './DogoSmall';
-export { default as Apple } from './Dpple';
-export { default as Google } from './Doogle';
+export { default as Apple } from './Apple';
+export { default as Google } from './Google';
+export { default as LogoLarge, type LogoLargeProps } from './LogoLarge';
+export { default as LogoSmall, type LogoSmallProps } from './LogoSmall';

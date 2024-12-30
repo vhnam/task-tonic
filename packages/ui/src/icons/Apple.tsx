@@ -14,4 +14,5 @@ const Apple = (props: SVGProps<SVGSVGElement>) => (
     />
   </svg>
 );
+
 export default Apple;

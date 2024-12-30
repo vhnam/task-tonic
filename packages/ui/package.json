@@ -5,6 +5,7 @@
   "private": true,
   "exports": {
     "./components": "./src/components/index.ts",
+    "./icons": "./src/icons/index.ts",
     "./styles.css": "./dist/index.css"
   },
   "scripts": {

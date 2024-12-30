@@ -1,5 +1,4 @@
-import Apple from '../../icons/Dpple';
-import Google from '../../icons/Doogle';
+import { Apple, Google } from '../../icons';
 import { Button, type ButtonProps } from '../Button';
 
 export type SocialButtonProps = Omit<ButtonProps, 'variant'> & {
@@ -12,7 +11,7 @@ const SocialButton = ({ children, variant, ...props }: SocialButtonProps) => {
   return (
     <Button
       {...props}
-      className="border-greyscale-100 hover:bg-greyscale-100 flex w-full items-center justify-center gap-3 border-[1px] border-solid bg-transparent"
+      className="border-greyscale-100 hover:bg-greyscale-100 flex w-full items-center justify-center gap-3 border border-solid bg-transparent"
     >
       {icon}
       {children}
