@@ -33,7 +33,9 @@ const variantStyles = {
 
 const Typography = ({ children, className, variant }: TypographyProps) => {
   return (
-    <span className={cn(variantStyles[variant], className)}>{children}</span>
+    <span className={cn(className, 'inline-block', variantStyles[variant])}>
+      {children}
+    </span>
   );
 };
 

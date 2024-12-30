@@ -8,6 +8,26 @@
       "types": "./src/components/button.tsx",
       "default": "./dist/components/button.js"
     },
+    "./components/checkbox": {
+      "types": "./src/components/checkbox.tsx",
+      "default": "./dist/components/checkbox.js"
+    },
+    "./components/divider": {
+      "types": "./src/components/divider.tsx",
+      "default": "./dist/components/divider.js"
+    },
+    "./components/logo": {
+      "types": "./src/components/logo.tsx",
+      "default": "./dist/components/logo.js"
+    },
+    "./components/socialButton": {
+      "types": "./src/components/socialButton.tsx",
+      "default": "./dist/components/socialButton.js"
+    },
+    "./components/textField": {
+      "types": "./src/components/textField.tsx",
+      "default": "./dist/components/textField.js"
+    },
     "./components/typography": {
       "types": "./src/components/typography.tsx",
       "default": "./dist/components/typography.js"
@@ -18,7 +38,8 @@
     "lint": "eslint . --max-warnings 0",
     "check-types": "tsc --noEmit",
     "build:tailwind": "tailwindcss -i ./src/styles/globals.css -o ./dist/index.css",
-    "build": "yarn build:tailwind && tsc"
+    "build": "yarn build:tailwind && tsc",
+    "dev": "tsc --watch"
   },
   "devDependencies": {
     "@repo/eslint-config": "*",

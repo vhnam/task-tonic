@@ -1,0 +1,9 @@
+{
+  "base": {
+    "background": "#fff"
+  },
+  "greyscale": {
+    "50": "#ECEFF3",
+    "900": "#0d0d12"
+  }
+}
