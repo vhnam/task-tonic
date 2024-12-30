@@ -1,6 +1,6 @@
-import Button from '@repo/ui/components/button';
 import { Manrope } from 'next/font/google';
 import Image from 'next/image';
+import { Button } from '@repo/ui/components';
 
 const manropeSans = Manrope({
   subsets: ['latin'],

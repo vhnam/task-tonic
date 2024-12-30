@@ -1,6 +1,6 @@
-import Apple from '../icons/apple.js';
-import Google from '../icons/google.js';
-import Button, { ButtonProps } from './button.js';
+import Apple from '../../icons/Dpple';
+import Google from '../../icons/Doogle';
+import { Button, type ButtonProps } from '../Button';
 
 export type SocialButtonProps = Omit<ButtonProps, 'variant'> & {
   variant: 'apple' | 'google';

@@ -1,6 +1,7 @@
 {
   "base": {
-    "background": "#000"
+    "background": "#000",
+    "primary": "#1678F2"
   },
   "greyscale": {
     "0": "#0D0D12",

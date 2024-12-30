@@ -1,5 +1,5 @@
-import LogoLarge from '../icons/logoLarge.js';
-import LogoSmall from '../icons/logoSmall.js';
+import LogoLarge from '../../icons/logoLarge';
+import LogoSmall from '../../icons/logoSmall';
 
 export interface LogoProps {
   size: 'large' | 'small';

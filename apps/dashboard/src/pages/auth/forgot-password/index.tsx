@@ -1,4 +1,4 @@
-import Button from '@repo/ui/components/button';
+import Button from '../../../../../../packages/ui/dist/components/button/button';
 import Logo from '@repo/ui/components/logo';
 import TextField from '@repo/ui/components/textField';
 import Typography from '@repo/ui/components/typography';

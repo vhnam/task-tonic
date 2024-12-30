@@ -1,4 +1,4 @@
-import Button from '@repo/ui/components/button';
+import Button from '../../../../../../packages/ui/dist/components/button/button';
 import Link from 'next/link';
 import Divider from '@repo/ui/components/divider';
 import Logo from '@repo/ui/components/logo';

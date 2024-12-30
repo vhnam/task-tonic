@@ -1,7 +1,7 @@
-import Button from '@repo/ui/components/button';
 import Logo from '@repo/ui/components/logo';
 import TextField from '@repo/ui/components/textField';
 import Typography from '@repo/ui/components/typography';
+import Button from '../../../../../../packages/ui/dist/components/button/button';
 
 const LoginPage = () => {
   return (
@@ -13,8 +13,8 @@ const LoginPage = () => {
             Visualize your productivity.
           </Typography>
           <Typography variant="md" className="text-additional-white">
-            See how far you’ve come. TaskTonic’s analytics provide insights into
-            your task completion rates and productivity trends
+            See how far you&apos;ve come. TaskTonic&apos;s analytics provide
+            insights into your task completion rates and productivity trends
           </Typography>
         </div>
       </div>

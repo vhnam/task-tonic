@@ -1,14 +1,9 @@
 import { PropsWithChildren } from 'react';
+import { positionStyles } from './Divider.styles';
 
 export interface DividerProps extends PropsWithChildren {
   position?: 'left' | 'center' | 'right';
 }
-
-const positionStyles = {
-  left: 'before:w-[10%] after:w-full',
-  center: 'before:w-full after:w-full',
-  right: 'before:w-full after:w-[10%]',
-};
 
 const Divider = ({ children, position = 'center' }: DividerProps) => {
   return (
