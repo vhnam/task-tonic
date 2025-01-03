@@ -15,11 +15,11 @@ const Divider = ({
   return (
     <div
       className={cn(
-        `${positionStyles[position]} before:border-greyscale-400 after:border-greyscale-400 flex shrink-0 items-center before:self-center before:border-t before:content-[''] after:self-center after:border-t after:content-['']`,
-        className
+        `${positionStyles[position]} flex shrink-0 items-center before:self-center before:border-greyscale-400 before:border-t before:content-[''] after:self-center after:border-greyscale-400 after:border-t after:content-['']`,
+        className,
       )}
     >
-      {children && <span className="px-4">{children}</span>}
+      {children && <span className='px-4'>{children}</span>}
     </div>
   );
 };

@@ -7,7 +7,11 @@
   },
   "files": {
     "ignoreUnknown": false,
-    "ignore": []
+    "ignore": [
+      "apps/dashboard/.next",
+      "packages/ui/dist",
+      "packages/utils/dist"
+    ]
   },
   "formatter": {
     "enabled": true,
@@ -21,12 +25,25 @@
     "enabled": true,
     "ignore": ["apps/dashboard/.next", "./packages/ui/dist"],
     "rules": {
-      "recommended": true
+      "recommended": true,
+      "nursery": {
+        "useSortedClasses": {
+          "level": "error",
+          "fix": "safe",
+          "options": {
+            "attributes": ["className"],
+            "functions": ["cn"]
+          }
+        }
+      }
     }
   },
   "javascript": {
     "formatter": {
-      "quoteStyle": "single"
+      "jsxQuoteStyle": "single",
+      "quoteStyle": "single",
+      "trailingCommas": "all",
+      "indentStyle": "space"
     }
   }
 }

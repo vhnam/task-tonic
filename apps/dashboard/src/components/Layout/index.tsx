@@ -7,11 +7,7 @@ const manropeSans = Manrope({
 });
 
 const Layout = ({ children }: PropsWithChildren) => {
-  return (
-    <div className={manropeSans.variable}>
-      <>{children}</>
-    </div>
-  );
+  return <div className={manropeSans.variable}>{children}</div>;
 };
 
 export default Layout;

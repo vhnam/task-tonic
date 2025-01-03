@@ -8,15 +8,15 @@ export interface CheckboxProps extends AllHTMLAttributes<HTMLInputElement> {
 
 const Checkbox = ({ label, ...props }: CheckboxProps) => {
   return (
-    <div className="flex items-center gap-2">
+    <div className='flex items-center gap-2'>
       <input
-        type="checkbox"
+        type='checkbox'
         className={cn(
-          'border-primary-300 [&:checked]:bg-primary-300 h-[1.25rem] w-[1.25rem] rounded-[0.375rem] border-[1px] border-solid',
+          'h-[1.25rem] w-[1.25rem] rounded-[0.375rem] border-[1px] border-primary-300 border-solid [&:checked]:bg-primary-300',
         )}
         {...props}
       />{' '}
-      <Typography variant="sm" className="text-greyscale-500 font-medium">
+      <Typography variant='sm' className='font-medium text-greyscale-500'>
         {label}
       </Typography>
     </div>

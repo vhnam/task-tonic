@@ -22,12 +22,12 @@ const MenuItem = ({
   return (
     <MuiMenuItem
       className={cn(
-        'text-md text-greyscale-600 hover:bg-greyscale-50 hover:text-greyscale-600 active:bg-primary-0 active:text-base-primary relative mx-5 flex cursor-pointer items-center gap-3 rounded-xl px-4 py-3 font-medium transition',
+        'relative mx-5 flex cursor-pointer items-center gap-3 rounded-xl px-4 py-3 font-medium text-greyscale-600 text-md transition hover:bg-greyscale-50 hover:text-greyscale-600 active:bg-primary-0 active:text-base-primary',
         {
-          "text-base-primary bg-primary-0 before:border-l-base-primary before:absolute before:bottom-0 before:left-[-20px] before:top-0 before:h-full before:rounded-r before:border-l-[5px] before:border-solid before:content-['']":
+          "bg-primary-0 text-base-primary before:absolute before:top-0 before:bottom-0 before:left-[-20px] before:h-full before:rounded-r before:border-l-[5px] before:border-l-base-primary before:border-solid before:content-['']":
             selected,
         },
-        className
+        className,
       )}
       {...props}
     >

@@ -10,7 +10,7 @@ const Drawer = ({ children, className }: DrawerProps) => {
     <div
       className={cn(
         className,
-        'border-r-greyscale-100 border-r border-solid py-5'
+        'border-r border-r-greyscale-100 border-solid py-5',
       )}
     >
       {children}

@@ -11,7 +11,7 @@ const SocialButton = ({ children, variant, ...props }: SocialButtonProps) => {
   return (
     <Button
       {...props}
-      className="border-greyscale-100 hover:bg-greyscale-100 flex w-full items-center justify-center gap-3 border border-solid bg-transparent"
+      className='flex w-full items-center justify-center gap-3 border border-greyscale-100 border-solid bg-transparent hover:bg-greyscale-100'
     >
       {icon}
       {children}

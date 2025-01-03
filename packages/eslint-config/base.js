@@ -1,9 +1,7 @@
 import js from '@eslint/js';
-import eslintConfigPrettier from 'eslint-config-prettier';
 import createTypeScriptImportResolver from 'eslint-import-resolver-typescript';
 import importPlugin from 'eslint-plugin-import';
 import onlyWarn from 'eslint-plugin-only-warn';
-import sortPlugin from 'eslint-plugin-sort';
 import tailwindPlugin from 'eslint-plugin-tailwindcss';
 import turboPlugin from 'eslint-plugin-turbo';
 import tsEslintPlugin from 'typescript-eslint';
@@ -15,8 +13,6 @@ import tsEslintPlugin from 'typescript-eslint';
  * */
 export const config = [
   js.configs.recommended,
-  eslintConfigPrettier,
-  sortPlugin.configs['flat/recommended'],
   importPlugin.flatConfigs.recommended,
   importPlugin.flatConfigs.typescript,
   ...tailwindPlugin.configs['flat/recommended'],
@@ -24,7 +20,6 @@ export const config = [
   {
     plugins: {
       turbo: turboPlugin,
-      sort: sortPlugin,
       tailwind: tailwindPlugin,
     },
     rules: {
@@ -34,6 +29,7 @@ export const config = [
         {
           ignoreCase: true,
           ignoreDeclarationSort: true,
+          ignoreMemberSort: true,
         },
       ],
     },
